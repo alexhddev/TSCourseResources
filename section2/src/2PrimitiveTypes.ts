@@ -1,3 +1,5 @@
+export {}
+
 // JS types:
 let fistName = 'John';
 let isAdmin = false;
