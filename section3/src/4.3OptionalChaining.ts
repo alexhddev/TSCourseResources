@@ -22,11 +22,11 @@ function manageOldWays(manager: Manager) {
 
 manage({
     team: {
-        // scrumMaster: {
-        //     holdMeaningfulMeetings: ()=>{
-        //         console.log('Holding e very useful meeting')
-        //     }
-        // }
+        scrumMaster: {
+            holdScrumMeetings: ()=>{
+                console.log('Holding e very useful scrum meeting')
+            }
+        }
     }
 });
 
