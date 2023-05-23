@@ -1,7 +1,7 @@
 type Programmer = 'Programmer'
 type HR = 'HR'
 
-const bestProgrammer: Programmer = 'Programmer'
+let bestProgrammer: Programmer = 'Programmer'
 
 type PositionType = Programmer | HR
 
@@ -12,6 +12,7 @@ type Position =
 
 function getSalaryForPosition(position: Position): number | undefined {
     if (position === 'Programmer') {
+        bestProgrammer = position
         return 100000
     }
     if (position === 'HR') {
