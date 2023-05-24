@@ -42,3 +42,5 @@ complicatedJobMadeInSteps.codingLanguage = 'C#';
 complicatedJobMadeInSteps.hasManyMeetings = true;
 complicatedJobMadeInSteps.reportsToBeCompleted = []
 complicatedJobMadeInSteps.sourceControl = 'git'
+
+export {}
