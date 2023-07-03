@@ -1,0 +1,8 @@
+Steps:
+ - npm init -y
+ - tsc init
+ - configure tsc
+ - npm i -D typescript
+ - npm i -D @types/node
+ - add files
+ - configure npm scripts
