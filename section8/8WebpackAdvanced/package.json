@@ -1,0 +1,27 @@
+{
+  "name": "7webpacksetup",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build": "npm run build-web & npm run build-node",
+    "build-web":"webpack --config webpack.config.web.ts",
+    "build-node":"webpack --config webpack.config.node.ts"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/node": "^20.4.1",
+    "@types/uuid": "^9.0.2",
+    "@types/webpack": "^5.28.1",
+    "ts-loader": "^9.4.4",
+    "ts-node": "^10.9.1",
+    "typescript": "^5.1.6",
+    "webpack": "^5.88.1",
+    "webpack-cli": "^5.1.4"
+  },
+  "dependencies": {
+    "uuid": "^9.0.0"
+  }
+}
