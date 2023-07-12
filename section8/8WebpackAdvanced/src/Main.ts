@@ -1,4 +1,5 @@
 import { Employee, printEmployee } from "./Utils";
+import { v4 } from 'uuid';
 
 const john: Employee = {
     age: 30,
@@ -6,3 +7,4 @@ const john: Employee = {
 }
 
 printEmployee(john);
+console.log(v4());

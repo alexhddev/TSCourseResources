@@ -4,7 +4,7 @@ import { resolve } from 'path'
 const config: Configuration = {
     mode: 'none',
     entry: {
-        'bundle': './src/Main.ts'
+        'bundle-node': './src/Main.ts'
     },
     target: 'node',
     module: {

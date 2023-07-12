@@ -4,7 +4,9 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "build": "webpack"
+    "build": "npm run build-web && npm run build-node",
+    "build-web": "webpack --config webpack.config.web.ts",
+    "build-node": "webpack --config webpack.config.node.ts"
   },
   "keywords": [],
   "author": "",
@@ -17,5 +19,9 @@
     "typescript": "^5.1.6",
     "webpack": "^5.88.1",
     "webpack-cli": "^5.1.4"
+  },
+  "dependencies": {
+    "@types/uuid": "^9.0.2",
+    "uuid": "^9.0.0"
   }
 }
