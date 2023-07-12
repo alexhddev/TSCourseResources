@@ -1,0 +1,39 @@
+1. npm init -y
+2. Install dependencies for TypeScript:
+    npm i -D typescript @types/node
+3. Install dependencies for webpack:
+    npm i -D webpack webpack-cli ts-node ts-loader @types/webpack
+4. tsc --init
+5. create src folder and populate it
+6. create webpack configuration file: webpack.config.ts with contents:
+
+import { Configuration } from 'webpack'
+import { resolve } from 'path'
+
+const config: Configuration = {
+    mode: 'none',
+    entry: {
+        'bundle': './src/Main.ts'
+    },
+    target: 'node',
+    module: {
+        rules: [{
+            exclude: /node_modules/,
+            use: {
+                loader: 'ts-loader',
+                options: {
+                    transpileOnly: true
+                }
+            }
+        }]
+    },
+    resolve: {
+        extensions: ['.tsx', '.ts', '.js'],
+    },
+    output: {
+        filename: '[name].js',
+        path: resolve(__dirname, 'dist'),
+      },
+}
+
+export default config;
