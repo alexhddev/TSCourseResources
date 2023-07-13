@@ -1,0 +1,19 @@
+{
+  "name": "9esbuild",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build": "node build.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/uuid": "^9.0.2",
+    "esbuild": "^0.18.11"
+  },
+  "dependencies": {
+    "uuid": "^9.0.0"
+  }
+}
