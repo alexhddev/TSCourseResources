@@ -8,5 +8,8 @@
   },
   "keywords": [],
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {
+    "concise-logger": "file:../concise-logger-1.0.0.tgz"
+  }
 }
