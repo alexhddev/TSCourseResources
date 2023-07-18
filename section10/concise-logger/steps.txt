@@ -1,0 +1,8 @@
+1. npm init -y
+2. tsc --init
+3. npm i -D typescript @types/node @types/uuid
+4. npm i uuid
+5. add build script
+6. configure tsconfig.json for src and dist
+7. populate src with actual implementation
+    - use separate file for uuid
