@@ -1,0 +1,8 @@
+1. npm init -y
+2. npm install "express@>=5.0.0-beta.1" --save    - talk about versions      
+3. npm i -D typescript ts-node @types/express @types/node
+4. write a minimal tsconfig.json
+5. write minimal express app
+6. configure nodemon:
+    - npm i -D nodemon
+    - configure script for nodemon

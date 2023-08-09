@@ -1,0 +1,11 @@
+{
+    "compilerOptions": {
+        "target": "ES2022",
+        "allowSyntheticDefaultImports": true,
+        "strict": true,
+        "rootDir": "./src",
+        "outDir": "dist",
+        "esModuleInterop": true,
+        "moduleResolution": "Node16"
+    }
+}
