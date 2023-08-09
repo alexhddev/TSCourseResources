@@ -3,5 +3,15 @@
 GET {{url}}/employees/
 ###
 
-GET {{url}}/employees/ea9854573238702e375d
+GET {{url}}/employees/d2a83616c5f6eab1da92
 ###
+
+POST {{url}}/employees/
+Content-Type: application/json
+
+{
+    "name": "John",
+    "position": "Manager",
+    "salary":50000,
+    "other": "stuff"
+}
