@@ -5,4 +5,6 @@ const employeesRouter = Router();
 
 employeesRouter.get('/', handlers.getAll)
 
+employeesRouter.get('/:id', handlers.getById)
+
 export default employeesRouter;
