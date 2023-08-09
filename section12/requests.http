@@ -1,4 +1,7 @@
 @url = http://localhost:3000
 
-GET {{url}}/hello/
+GET {{url}}/employees/
+###
+
+PUT {{url}}/employees/
 ###

@@ -1,4 +1,5 @@
 import express, {Request, Response} from 'express'
+import employeesRouter from './api/empl/Employee.route';
 
 const port = 3000;
 
@@ -8,9 +9,7 @@ export class Server {
 
     startServer(){
 
-        this.app.get('/hello', (req:Request, res: Response)=>{
-            res.send('Hello!zzzz')
-        })
+        this.app.use('/employees', employeesRouter)
 
         this.app.listen(port, ()=>{
             console.log('Listening on port ' + port)
