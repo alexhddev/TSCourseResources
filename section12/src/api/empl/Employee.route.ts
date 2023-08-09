@@ -1,6 +1,6 @@
 import { Router, Request, Response, json, } from 'express'
 import * as handlers from './Employee.handler';
-import { validateAsEmployee } from './Validator';
+import { validateAsEmployee } from './ZodValidator';
 
 const employeesRouter = Router();
 
