@@ -25,3 +25,15 @@ export function injectDependency(key: string, dependency: any){
     container.register(key, dependency)
 }
 
+/**
+ * Inject as a decorator
+ */
+export function inject(key: string) {
+    return function <T, V>(target: undefined, context: ClassFieldDecoratorContext<T, V>) {
+        return function (args: V) {
+            container.register(key, args);
+            return args;
+        }
+    }
+}
+
