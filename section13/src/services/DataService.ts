@@ -10,7 +10,11 @@ export async function createEmployee(empl: Employee) {
         },
         body: JSON.stringify(empl)
     });
-    const jsonResult = await result.json() as {id: string};
+    const jsonResult = await result.json()
+    if (!result.ok) {
+        const message = jsonResult[0].message;
+        throw new Error(message)
+    }
     return jsonResult.id;
 }
 

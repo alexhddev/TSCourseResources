@@ -8,13 +8,20 @@ import { EmployeeForm } from "./EmployeeForm";
 
 export function Employees() {
     const [employees, setEmployees] = useState<Employee[]>([]);
+    const [errorMessage, setErrorMessage] = useState('');
 
     const onEmployeeAdd = async (empl: Employee) => {
-        console.log(empl)
-        const id = await createEmployee(empl);
-        setEmployees([...employees, empl]);
-        return id;
-      };   
+        setErrorMessage('')
+        try {
+            const id = await createEmployee(empl);
+            setEmployees([...employees, empl]);
+            return id;
+        } catch (error) {
+            if (error instanceof Error) {
+                setErrorMessage(error.message)
+            }
+        }
+    };
 
     useEffect(() => {
         const fetchEmployees = async () => {
@@ -27,7 +34,11 @@ export function Employees() {
 
     return (
         <div>
-            <EmployeeForm onEmplAdd={onEmployeeAdd}/>
+            <EmployeeForm onEmplAdd={onEmployeeAdd} />
+            {
+                errorMessage ?
+                    <label style={{ color: "red" }}>{errorMessage}</label> : null
+            }
             <EmployeesList employees={employees} />
         </div>
     )
