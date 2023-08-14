@@ -1,7 +1,7 @@
 import { useState, useEffect } from "react";
 import { Employee } from "../../model/Employee.model";
 import { EmployeesList } from "./EmployeesList";
-import { createEmployee, getEmployees } from "../../services/FakeDataService";
+import { createEmployee, getEmployees } from "../../services/DataService";
 import { EmployeeForm } from "./EmployeeForm";
 
 
