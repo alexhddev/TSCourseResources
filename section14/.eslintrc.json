@@ -15,6 +15,10 @@
     "plugins": [
         "@typescript-eslint"
     ],
+    "ignorePatterns":[
+        "node_modules/",
+        "out/"
+    ],
     "rules": {
         "no-trailing-spaces":"warn"
     }
