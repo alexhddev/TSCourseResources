@@ -3,7 +3,7 @@ type WithName = {
     name: string
 }
 
-function printName(arg: WithName){
+async function printName(arg: WithName){
     console.log(arg.name)
 }
 
